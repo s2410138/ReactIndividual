@@ -72,8 +72,8 @@ export default function AddUserForm(props: AddUserFormProps) {
     }
   };  
   return (
-    <comp.Container className="mt-4" style={{ maxWidth: '500px' }}>
-      <comp.Card className="shadow-sm">
+    <comp.Container>
+      <comp.Card className="py-4 bg-secondary text-white shadow-sm">
         <comp.Card.Body>
           <comp.Card.Title className="mb-3">Add New User</comp.Card.Title>
 

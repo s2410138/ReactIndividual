@@ -27,7 +27,7 @@ function SearchForm(props:SearchFormProps){
             </comp.Button>
           </comp.Col>
           <comp.Col md={2} xs={6}>
-            <comp.Button type="button" variant="secondary" className="w-100" onClick={props.ButtonHandleReset}>
+            <comp.Button type="button" variant="primary" className="w-100" onClick={props.ButtonHandleReset}>
               Reset
             </comp.Button>
           </comp.Col>

@@ -71,11 +71,11 @@ function UserList() {
   };
 
   return (
-    <div>
-      <comp.Container className="py-4">
+    <div className="py-4 bg-secondary text-white shadow-sm">
+      <comp.Container >
         <AddUserForm onUserAdded={fetchUsers}></AddUserForm>
       </comp.Container>
-    <comp.Container className="py-4">
+    <comp.Container>
       <h2 className="mb-4">User Search</h2>
 
       {/* Search Form */}
@@ -94,7 +94,7 @@ function UserList() {
         ))}
       </comp.Row>
     </comp.Container>
-    <comp.Button onClick={handleReset} >Reload</comp.Button>
+    <comp.Button onClick={handleReset} className="m-3">Reload</comp.Button>
   </div>
   );
 }
