@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import * as comp from '../Helpers/react_bootstrapComp'
 
 interface AddUserFormProps {
-  onUserAdded: () => void; // Callback function from parent
+  onUserAdded: () => void; 
 }
 
 export default function AddUserForm(props: AddUserFormProps) {
@@ -70,7 +70,8 @@ export default function AddUserForm(props: AddUserFormProps) {
     } finally {
       setLoading(false);
     }
-  };  
+  }; 
+
   return (
     <comp.Container>
       <comp.Card className="py-4 bg-secondary text-white shadow-sm">
